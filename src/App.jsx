@@ -485,7 +485,7 @@ export default function App(){
                     <div style={{fontSize:11,fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase",color:T.muted,marginBottom:8}}>Gender</div>
                     <SegBtn options={[["male","♂ Male"],["female","♀ Female"],["other","Other"]]} value={p.gender} onChange={v=>setP({gender:v})}/>
                   </div>
-                  <FInput label="Age" type="number" value={p.age} onChange={v=>setP({age:v})} placeholder="25"/>
+                  <FInput label="Age" type="number" value={p.age} onChange={v=>setP({age:v})} placeholder="26"/>
                   <div>
                     <div style={{fontSize:11,fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase",color:T.muted,marginBottom:8}}>Units</div>
                     <SegBtn options={[["imperial","Imperial (lbs / ft)"],["metric","Metric (kg / cm)"]]} value={p.unit||"imperial"} onChange={v=>setP({unit:v})}/>
